@@ -5,7 +5,6 @@ import {
   ApolloFederationDriverConfig,
 } from '@nestjs/apollo';
 import { GraphQLModule } from '@nestjs/graphql';
-import { join } from "path"
 import {TeamsService} from "./teams/teams.service";
 
 
