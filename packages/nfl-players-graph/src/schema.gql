@@ -1,0 +1,13 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Player {
+  firstName: String!
+  lastName: String!
+  jerseyNumber: Int!
+}
+
+type Query {
+  players: [Player!]!
+}

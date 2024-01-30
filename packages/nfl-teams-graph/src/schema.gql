@@ -1,0 +1,13 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Team {
+  teamName: String!
+  teamCity: String!
+  teamId: Int!
+}
+
+type Query {
+  teams: [Team!]!
+}
