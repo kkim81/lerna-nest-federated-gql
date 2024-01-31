@@ -11,6 +11,7 @@ import { GraphQLModule } from '@nestjs/graphql';
     },
     gateway: {
       supergraphSdl: new IntrospectAndCompose({
+        pollIntervalInMs: 3000,
         subgraphs: [
           { name: 'players', url: 'http://localhost:3001/graphql' },
           { name: 'teams', url: 'http://localhost:3002/graphql' },

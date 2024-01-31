@@ -1,4 +1,4 @@
-import { Resolver, Query } from '@nestjs/graphql';
+import { Resolver, Args, Query , Int} from '@nestjs/graphql';
 import { PlayersService } from "./players.service";
 import { Player } from "./player.entity"
 @Resolver()
@@ -9,4 +9,10 @@ export class PlayersResolver {
   players(): Promise<Player[]> {
     return this.playersService.findAll();
   }
+
+  @Query(returns => Player)
+  playerById(@Args('id', {type: () => Int }) id: number): Promise<Player> {
+    return this.playersService.findOne(id);
+  }
+
 }

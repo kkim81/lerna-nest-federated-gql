@@ -7,7 +7,10 @@ export class Player {
 
   @Field()
   lastName: string;
-  
+
+  @Field()
+  test: string
+
   @Field(type => Int)
   jerseyNumber: number;
 }
